@@ -9,3 +9,8 @@ Connect Grove - Air Quality Sensor to port A0 of Grove-Base Shield
 Flame Sensor
 D2に挿す
 
+LEDbar
+I2C communication
+
+temp&humi sensor
+D2に挿す
