@@ -16,4 +16,4 @@ while (1):
     message = s4[:-1]
     print(message)
     sendRequest(message)
-    time.sleep(30)
+    time.sleep(60)

@@ -34,6 +34,7 @@ void loop() {
   //lcd.setCursor(0, 0);
   float temp_hum_val[2] = {0};
   int quality = sensor.slope();
+//  quality = 3;
   
   if (!dht.readTempAndHumidity(temp_hum_val)) {
 //    debug.print("Humidity: ");

@@ -8,11 +8,11 @@ def sendRequest(message):
     air=message[5:]
     if(air=='Fresh air.'):
         airMessage='綺麗な空気です。'
-    elif(air=='Low pollution!'):
+    elif(air=='Low pollutio!'):
         airMessage='まあまあ綺麗です。'
-    elif(air=='High pollution!'):
+    elif(air=='High pollutio!'):
         airMessage='ちょっと汚れてます、空気を入れ替えましょう！'
-    elif(air=='High pollution! Force signal active'):
+    elif(air=='High pollutio! Force sigal active.'):
         airMessage='今すぐ空気を入れ替えましょう！'
 
     json_open = open('discord_url.json', 'r')
