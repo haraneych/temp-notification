@@ -36,12 +36,12 @@ void loop() {
   int quality = sensor.slope();
   
   if (!dht.readTempAndHumidity(temp_hum_val)) {
-    debug.print("Humidity: ");
-    debug.print(temp_hum_val[0]);
-    debug.print(" %\t");
-    debug.print("Temperature: ");
+//    debug.print("Humidity: ");
+//    debug.print(temp_hum_val[0]);
+//    debug.print(" %\t");
+//    debug.print("Temperature: ");
     debug.print(temp_hum_val[1]);
-    debug.println(" *C");
+//    debug.println(" *C");
 
 //    lcd.print("Humidity: ");
 //    lcd.print(temp_hum_val[0]);
@@ -55,8 +55,8 @@ void loop() {
 
  //Air Quality
     lcd.setCursor(0, 1);
-    debug.print("Sensor value: ");
-    debug.println(sensor.getValue());
+//    debug.print("Sensor value: ");
+//    debug.println(sensor.getValue());
     //lcd.print("Sensor value: ");
     if (quality == AirQualitySensor::FORCE_SIGNAL) {
         debug.println("High pollution! Force signal active.");
@@ -75,5 +75,6 @@ void loop() {
         lcd.println("Fresh air.");
         lcd.setRGB(0, 150, 255);
     }
+
   delay(3000);
 }
